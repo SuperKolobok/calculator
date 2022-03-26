@@ -30,7 +30,7 @@ public class Start {
         else if (!firstOperand && secondOperand == false) {
             RomeToIntConvert romeToIntConvert = new RomeToIntConvert();
             int romeResult = result.math(romeToIntConvert.convert(split[0]), split[1], romeToIntConvert.convert(split[2]));
-            if (romeResult < 0)
+            if (romeResult < 1)
                 throw new Exception("throws Exception //т.к. в римской системе нет отрицательных чисел");
             IntToRomeConvert intToRomeConvert = new IntToRomeConvert();
             System.out.println("Result = " + intToRomeConvert.convert(romeResult));
