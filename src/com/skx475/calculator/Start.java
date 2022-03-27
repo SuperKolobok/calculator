@@ -23,10 +23,10 @@ public class Start {
 
         if (firstOperand != secondOperand)
             throw new Exception("throws Exception //т.к. используются одновременно разные системы счисления");
-        // both operands are int
+            // both operands are int
         else if (firstOperand && secondOperand == true)
             System.out.println("Result = " + result.math(Integer.parseInt(split[0]), split[1], Integer.parseInt(split[2])));
-        // both operands are rome
+            // both operands are rome
         else if (!firstOperand && secondOperand == false) {
             RomeToIntConvert romeToIntConvert = new RomeToIntConvert();
             int romeResult = result.math(romeToIntConvert.convert(split[0]), split[1], romeToIntConvert.convert(split[2]));
@@ -35,5 +35,6 @@ public class Start {
             IntToRomeConvert intToRomeConvert = new IntToRomeConvert();
             System.out.println("Result = " + intToRomeConvert.convert(romeResult));
         }
+
     }
 }
